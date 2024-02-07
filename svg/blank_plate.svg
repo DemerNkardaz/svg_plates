@@ -38,15 +38,15 @@
     </style>
     <body xmlns="http://www.w3.org/1999/xhtml">
       <div id="frame">
-        <div id="image_main" class="innerBlock"><img src="png/bf25.png" /></div>
+        <div id="image_main" class="innerBlock"><img src="../png/bf25.png" /></div>
         <div id="info_block">
           <h1>Header</h1>
           <p>Sample text</p>
           <div id="images">
-            <div class="innerBlock image_small"><img src="png/bf25.png" /></div>
-            <div class="innerBlock image_small"><img src="png/bf25.png" /></div>
-            <div class="innerBlock image_small"><img src="png/bf25.png" /></div>
-            <div class="innerBlock image_small"><img src="png/bf25.png" /></div>
+            <div class="innerBlock image_small"><img src="../png/bf25.png" /></div>
+            <div class="innerBlock image_small"><img src="../png/bf25.png" /></div>
+            <div class="innerBlock image_small"><img src="../png/bf25.png" /></div>
+            <div class="innerBlock image_small"><img src="../png/bf25.png" /></div>
           </div>
         </div>
       </div>
