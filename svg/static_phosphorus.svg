@@ -70,7 +70,7 @@
     </style>
     <body xmlns="http://www.w3.org/1999/xhtml">
       <div id="frame" class="outerBlock">
-        <div id="image_main" class="innerBlock"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/bf25.png" /></div>
+        <div id="image_main" class="innerBlock"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/bf25.png" crossorigin="anonymous"/></div>
         <div id="info_block">
           <div id="description">
             <h1 id="title">Phosphoric Plasma</h1>
@@ -83,11 +83,11 @@
             </div>
           </div>
           <div id="images">
-            <div class="innerBlock image_small"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/grenade_phosphorus_01_45 (128 x 128).png"/></div>
-            <div class="innerBlock image_small"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/grenade_phosphorus_02 (128 x 128).png"/></div>
+            <div class="innerBlock image_small"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/grenade_phosphorus_01_45 (128 x 128).png" crossorigin="anonymous"/></div>
+            <div class="innerBlock image_small"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/grenade_phosphorus_02 (128 x 128).png" crossorigin="anonymous"/></div>
           </div>
         </div>
-        <object data="https://img.shields.io/badge/Type-Area-white" height="20"></object>
+        <object data="https://img.shields.io/badge/Type-Area-white" height="20" crossorigin="anonymous"></object>
       </div>
     </body>
   </foreignObject>
