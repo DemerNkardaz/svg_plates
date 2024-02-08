@@ -35,7 +35,6 @@
         justify-self: center;
         margin-top: 256px;
       }
-      .shieldsio{position: absolute; top: 10px; right: 10px;}
     </style>
     <style>
       * {color: #eee; font-family: sans-serif;}
@@ -57,53 +56,22 @@
         background: #414040;
         border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAMAAABgOjJdAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kTtIw1AUhv+miiIVBzuICEaoThbEF45ahSJUCLVCqw4mN31Bk4YkxcVRcC04+FisOrg46+rgKgiCDxBHJydFFynx3KTQIsYDl/vx3/P/3HsuINRKTLPaxgBNt81kPCamM6tixysCGEQIQ5iSmWXMSVICvvV1T91Ud1Ge5d/3Z3WrWYsBAZF4lhmmTbxBPL1pG5z3icOsIKvE58SjJl2Q+JHrisdvnPMuCzwzbKaS88RhYjHfwkoLs4KpEU8SR1RNp3wh7bHKeYuzVqqwxj35C0NZfWWZ67QGEMciliBBhIIKiijBRpR2nRQLSTqP+fj7Xb9ELoVcRTByLKAMDbLrB/+D37O1chPjXlIoBrS/OM7HMNCxC9SrjvN97Dj1EyD4DFzpTX+5Bsx8kl5tapEjoGcbuLhuasoecLkD9D0Zsim7UpCWkMsB72f0TRmg9xboWvPm1jjH6QOQolklboCDQ2AkT9nrPu/ubJ3bvz2N+f0As9tywbHNoQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgMLNBNXffN5AAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAQtQTFRFAAAAAAAAMTAAYQABMQABAAAA/9y6AAAAAAAA/7F+SjAAMRgAMQABGQABAAAA/9nH/9m0MQ8AIQ8AAAAAAAAA/8GqGQsAAAAAAAAAAAAAOxwAMRMAJwkAFAkAMQ8AKQ8AEQABAAAAAAAAAAAA/+/pBwYA//fq//HkAAAAJQsAAAAAIQoABQQA//nwIgkADwQAAAAA//XsAAAAAAAAAAAAHQsA//rzAAAAAAAAAAAACgIAAAAAAAAADAUABgIAAAAAAAAAAAAAGQcADwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAcAAAAACgMAAAAAAAAAAAAACgIAAAAAAAAAAwIAAAAAdNLDhQAAAFh0Uk5TAAIFBQUFBwgJCgoKCwsMDg4QEBASFRUVGBkaGhoaHx8gICEiIyQlJiYqLi8vMjQ0NDY2Nzo+P0BBTE5PUVNTVFpcXmNjZG9wcXJzdHh5fYCChIuMl5utu+r6V5gAAAABYktHRFmasvQYAAABUklEQVR4nLXUyU7DMBAG4PHEaewsbWihUg9IIPH+T4QEEodKhZa0Wew0jo2SLlD74BM+WZpP8nj5TcA3yGWCdkXfCsTIFq3WvwIRYGqLA8BoyAg4jx9t8dEIMZBBUJ7P5itbrHf7QqhRIE4XD0tmC7n53B60HgSF+er+jtpCfX+td6CAAPIoW2YpM1pp3RsAEiBSJLIqN2Ur9FVESnbKnAShIaOtLaiQUvdD84gBMsaVLUhTdY3uBhFiHKaxsYWu5EEK3QMEyNmUpWgLVddV0XVHgEkY5mmSUFscK1FUoh1WiXia83RiC1nX+7LqFQAN0myWJOw/hL8P/1785+E/U/+9+O/W/z7cKF0F0CzOg7UDnt9WfdGUahRJ9v7iCKpen8r6JKKFigNHGNI3dNuqMVEkUtwRxAjaGn1KZUJg4nYKRzD1n2Q79egcbeJULgPP38MP9ZBIMci5WIsAAAAASUVORK5CYII=") 16/8px repeat;
         border-image-outset: 4px;
+        overflow: hidden;
       }
-      #info_block {
-        display: flex;
-        flex-direction: row;
-        margin-left: 10px;
-        width: 100%;
-      }
-      #images {
-        display: flex;
-        flex-direction: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 10px;
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-      }
+      #info_block { display: flex; flex-direction: row; margin-left: 10px; width: 270px; }
+      #images { display: flex; flex-direction: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; position: absolute; bottom: 10px; right: 10px; }
       .image_small {width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;}
-      .image_small img {width: 38px; height: 38px;}
-      #description {
-        position: relative;
-        max-width: 270px;
-      }
-      #bottomInfo{
-        position: absolute;
-        width: 250px;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        font-size: 11px;
-      }
-      #bottomInfo span {
-        display: flex;
-        align-items: center;
-        height: 20px;
-        padding: 0 7px 0 7px;
-        width: 100%;
-      }
-      #bottomInfo span:not(:first-of-type):not(:last-of-type) {
-        margin: 0 5px;
-      }
-      #bottomInfo span:first-of-type {
-        margin-right: 5px;
-      }
-      #bottomInfo span:last-of-type {
-        margin-left: 5px;
-      }
-
+      .image_small img {width: 38px; height: 38px; filter: drop-shadow(0 0 3px #000) drop-shadow(0 0 7px #000);}
+      #image_main {width: 128px; height: 128px; display: flex; align-items: center; justify-content: center;}
+      #image_main img {width: 118px; height: 118px; filter: drop-shadow(0 0 5px #000) drop-shadow(0 0 10px #000);}
+      #description { position: relative; max-width: 270px; }
+      #additional {width: 110px;}
+      #bottomInfo { position: absolute; width: 250px; bottom: 0; display: flex; align-items: center; font-size: 11px; }
+      #bottomInfo span {display: flex; align-items: center; height: 20px; padding: 0 7px 0 7px; width: 100%; }
+      #bottomInfo span:not(:first-of-type):not(:last-of-type) {margin: 0 5px;}
+      #bottomInfo span:first-of-type {margin-right: 5px;}
+      #bottomInfo span:last-of-type {margin-left: 5px;}
+      #badges{position: absolute; top: 10px; right: 10px; display: grid; grid-template-columns: 1fr; grid-row-gap: 2.5px;}
     </style>
     <div id="grid">
       <div id="frame" class="outerBlock">
@@ -119,12 +87,16 @@
               <span class="innerBlock">Medium Area</span>
             </div>
           </div>
+        </div>
+        <div id="additional">
           <div id="images">
             <div class="innerBlock image_small"><img src="png/grenade_phosphorus_01_45 (128 x 128).png" crossorigin="anonymous" /></div>
             <div class="innerBlock image_small"><img src="png/grenade_phosphorus_02 (128 x 128).png" crossorigin="anonymous" /></div>
           </div>
+          <div id="badges">
+            <object data="https://img.shields.io/badge/Type-Area-white" height="20" crossorigin="anonymous"></object>
+          </div>
         </div>
-        <object data="https://img.shields.io/badge/Type-Area-white" height="20" crossorigin="anonymous"></object>
       </div>
       <object data="svg/blank_plate.svg?main=Qa8fX1c&sub1=gzuJ8l2&sub2=JXXvgup&t=Plasma phosphoric&p=Seems like with plasma grenade from above and have advanced area damage and long lasting effects." type="image/svg+xml" width="532" height="148"></object>
     </div>
