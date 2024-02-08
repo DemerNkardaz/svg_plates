@@ -59,19 +59,19 @@
         overflow: hidden;
       }
       #info_block { display: flex; flex-direction: row; margin-left: 10px; width: 270px; }
-      #images { display: flex; flex-direction: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; position: absolute; bottom: 10px; right: 10px; }
-      .image_small {width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;}
+      #images {position: absolute; bottom: 10px; right: 10px;display: grid; grid-template-columns: 1fr 1fr; grid-row-gap: 10px; grid-column-gap: 10px;}
+      .image_small {width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;}
       .image_small img {width: 38px; height: 38px; filter: drop-shadow(0 0 3px #000) drop-shadow(0 0 7px #000);}
       #image_main {width: 128px; height: 128px; display: flex; align-items: center; justify-content: center;}
       #image_main img {width: 118px; height: 118px; filter: drop-shadow(0 0 5px #000) drop-shadow(0 0 10px #000);}
       #description { position: relative; max-width: 270px; }
-      #additional {width: 110px;}
+      #additional {width: 110px; display: flex; flex-direction: column; justify-content: center; align-items:stretch; }
       #bottomInfo { position: absolute; width: 250px; bottom: 0; display: flex; align-items: center; font-size: 11px; }
       #bottomInfo span {display: flex; align-items: center; height: 20px; padding: 0 7px 0 7px; width: 100%; }
       #bottomInfo span:not(:first-of-type):not(:last-of-type) {margin: 0 5px;}
       #bottomInfo span:first-of-type {margin-right: 5px;}
       #bottomInfo span:last-of-type {margin-left: 5px;}
-      #badges{position: absolute; top: 10px; right: 10px; display: grid; grid-template-columns: 1fr; grid-row-gap: 2.5px;}
+      #badges{position: absolute; top: 10px; right: 10px; display: grid; grid-template-columns: 1fr; grid-row-gap: 2.5px; justify-items: end;}
     </style>
     <div id="grid">
       <div id="frame" class="outerBlock">
