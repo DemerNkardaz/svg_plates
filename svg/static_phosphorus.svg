@@ -45,11 +45,11 @@
           <div id="description">
             <h1 id="title">Phosphoric Plasma</h1>
             <p id="paragraph">
-              Grenade with phosphorous-plasma charge: powerful explosion inflicts instant damage and long-lasting burning and poisoning effect, harming enemies over time.
+              Grenade with phosphorous-plasma charge: powerful phosphoric plasma inflicts instant damage and long-lasting burning and poisoning effect, harming enemies over time.
             </p>
             <div id="bottomInfo" class="outerBlock">
               <span class="innerBlock">Highest Tier</span>
-              <span class="innerBlock">Medium Area</span>
+              <span class="innerBlock">Large / Medium Area</span>
             </div>
           </div>
         </div>
