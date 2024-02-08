@@ -69,12 +69,12 @@
     </style>
     <body xmlns="http://www.w3.org/1999/xhtml">
       <div id="frame" class="outerBlock">
-        <div id="image_main" class="innerBlock"><img id="mainImageElement" src="" /></div>
+        <div id="image_main" class="innerBlock"><img src="https://i.imgur.com/Qa8fX1c.png" /></div>
         <div id="info_block">
           <div id="description">
-            <h1 id="title">Header</h1>
+            <h1 id="title">Phosphoric Plasma</h1>
             <p id="paragraph">
-              Sample text.
+              Grenade with phosphorous-plasma charge: powerful explosion inflicts instant damage and long-lasting burning and poisoning effect, harming enemies over time.
             </p>
             <div id="bottomInfo" class="outerBlock">
               <span class="innerBlock">Highest Tier</span>
@@ -82,45 +82,12 @@
             </div>
           </div>
           <div id="images">
+            <div class="innerBlock image_small"><img src="https://i.imgur.com/gzuJ8l2.png"/></div>
+            <div class="innerBlock image_small"><img src="https://i.imgur.com/JXXvgup.png"/></div>
           </div>
         </div>
         <object data="https://img.shields.io/badge/Type-Area-white" height="20"></object>
       </div>
     </body>
   </foreignObject>
-  <script>
-    function addImgurDomain(url) {
-      if (url) {
-        if (url.indexOf('.') === -1) {
-          return 'https://i.imgur.com/' + url + '.png';
-        }
-        return url;
-      }
-      return null;
-    }
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const mainImageUrl = addImgurDomain(urlParams.get('main'));
-    const titleText = urlParams.get('t') || 'Header';
-    const paragraphText = urlParams.get('p') || 'Sample text';
-
-    document.getElementById('mainImageElement').setAttribute('src', mainImageUrl);
-    document.getElementById('title').textContent = titleText;
-    document.getElementById('paragraph').textContent = paragraphText;
-
-    let i = 1;
-    while (true) {
-      const subImageUrl = addImgurDomain(urlParams.get('sub' + i));
-      if (!subImageUrl) {
-        break;
-      }
-      const div = document.createElement('div');
-      div.setAttribute('class', 'innerBlock image_small');
-      const img = document.createElement('img');
-      img.setAttribute('src', subImageUrl);
-      div.appendChild(img);
-      document.getElementById('images').appendChild(div);
-      i++;
-    }
-  </script>
 </svg>

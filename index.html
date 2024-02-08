@@ -37,17 +37,20 @@
       }
     </style>
     <style>
-      * {color: #eee;}
-      h1 {font-size: 24px; line-height: 1em; margin: 0;}
-      p {font-size: 14px; line-height: 1em; margin-top: 5px;}
+      * {color: #eee; font-family: sans-serif;}
+      body {margin: 0; padding: 0}
+      h1 {font-size: 18px; line-height: 1em; margin: 0;}
+      p {font-size: 12px; line-height: 1.5em; margin-top: 5px;}
       #frame {
         position: relative;
         width: 512px;
         height: 128px;
-        background: #302f30;
-        border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9bpSIVETuICAasulgQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfE0clJ0UVKvC8ptIjxwuN9nHfP4b37AH+txFSzbRxQNctIxmNCOrMqBF/hwyB6MIohiZn6nCgm4Flf99RNdRflWd59f1aXkjUZ4BOIZ5luWMQbxNObls55nzjMCpJCfE48ZtAFiR+5Lrv8xjnvsJ9nho1Ucp44TCzkW1huYVYwVOIp4oiiapTvT7uscN7irJYqrHFP/sJQVltZ5jqtAcSxiCWIECCjgiJKsBClXSPFRJLOYx7+fscvkksmVxGMHAsoQ4Xk+MH/4PdszdzkhJsUigHtL7b9MQwEd4F61ba/j227fgIEnoErrekv14CZT9KrTS1yBHRvAxfXTU3eAy53gL4nXTIkRwrQ8udywPsZfVMG6L0FOtfcuTXOcfoApGhWiRvg4BAYyVP2use7O1rn9m9PY34/opByuh0Yaa8AAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgIQJSQU1l6SAAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAALpQTFRFZGJhY2BgYF1cXVpZXFpZXFpYW1hXWlVSV1JQT01MT0xLT0pJTUdETUZDSEJBPDk4PDg3PzYzPzYxOzc2OzYzNi8sMTAxMTAwMS8wMS8vMS4vMC4uMC0tMCwsMCwrMCsqLyooMSYhLCclLCYlLiUhLCUkKCEfJSIhJyEeJSEhJyAdJCEfJCAeJx0aIx0bIxwZIxsYIxoXIBoXHhYUFQ8NEw4NDw4NEQ0MEA0MDw0NDAkHBQQDAwICAAAAeCdZ2wAAAAFiS0dECfHZpewAAACCSURBVHhebY9LDsMwCAXh+RdUiCPl/lc1EXa8aNWRjR6zAWANTBtGM5RSS8kpyDOjR62LMB16N5HXiLRbkeulaqarXDXDx/CxiQY03H25GQhORL6JDPrlj4mFeTPXJkREMAOBgdVPN98hqvp5vxwAJ9HTemCnSmLEgbktcpwMfM8HHrGVLy5TM6g2AAAAAElFTkSuQmCC") 8/4px repeat;
         padding: 10px;
         display: flex;
+      }
+      .outerBlock {
+        background: #302f30;
+        border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9bpSIVETuICAasulgQFXHUKhShQqgVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfE0clJ0UVKvC8ptIjxwuN9nHfP4b37AH+txFSzbRxQNctIxmNCOrMqBF/hwyB6MIohiZn6nCgm4Flf99RNdRflWd59f1aXkjUZ4BOIZ5luWMQbxNObls55nzjMCpJCfE48ZtAFiR+5Lrv8xjnvsJ9nho1Ucp44TCzkW1huYVYwVOIp4oiiapTvT7uscN7irJYqrHFP/sJQVltZ5jqtAcSxiCWIECCjgiJKsBClXSPFRJLOYx7+fscvkksmVxGMHAsoQ4Xk+MH/4PdszdzkhJsUigHtL7b9MQwEd4F61ba/j227fgIEnoErrekv14CZT9KrTS1yBHRvAxfXTU3eAy53gL4nXTIkRwrQ8udywPsZfVMG6L0FOtfcuTXOcfoApGhWiRvg4BAYyVP2use7O1rn9m9PY34/opByuh0Yaa8AAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmAgIQJSQU1l6SAAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAALpQTFRFZGJhY2BgYF1cXVpZXFpZXFpYW1hXWlVSV1JQT01MT0xLT0pJTUdETUZDSEJBPDk4PDg3PzYzPzYxOzc2OzYzNi8sMTAxMTAwMS8wMS8vMS4vMC4uMC0tMCwsMCwrMCsqLyooMSYhLCclLCYlLiUhLCUkKCEfJSIhJyEeJSEhJyAdJCEfJCAeJx0aIx0bIxwZIxsYIxoXIBoXHhYUFQ8NEw4NDw4NEQ0MEA0MDw0NDAkHBQQDAwICAAAAeCdZ2wAAAAFiS0dECfHZpewAAACCSURBVHhebY9LDsMwCAXh+RdUiCPl/lc1EXa8aNWRjR6zAWANTBtGM5RSS8kpyDOjR62LMB16N5HXiLRbkeulaqarXDXDx/CxiQY03H25GQhORL6JDPrlj4mFeTPXJkREMAOBgdVPN98hqvp5vxwAJ9HTemCnSmLEgbktcpwMfM8HHrGVLy5TM6g2AAAAAElFTkSuQmCC") 8/4px repeat;
       }
       .innerBlock {
         background: #414040;
@@ -56,7 +59,7 @@
       }
       #info_block {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-left: 10px;
         width: 100%;
       }
@@ -70,20 +73,56 @@
         right: 10px;
       }
       .image_small img {width: 48px; height: 48px;}
+      #description {
+        position: relative;
+        max-width: 270px;
+      }
+      #bottomInfo{
+        position: absolute;
+        width: 250px;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+      }
+      #bottomInfo span {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        padding: 0 7px 0 7px;
+        width: 100%;
+      }
+      #bottomInfo span:not(:first-of-type):not(:last-of-type) {
+        margin: 0 5px;
+      }
+      #bottomInfo span:first-of-type {
+        margin-right: 5px;
+      }
+      #bottomInfo span:last-of-type {
+        margin-left: 5px;
+      }
+
     </style>
     <div id="grid">
-      <div id="frame">
+      <div id="frame" class="outerBlock">
         <div id="image_main" class="innerBlock"><img src="png/bf25.png" /></div>
         <div id="info_block">
-          <h1>Header</h1>
-          <p>Sample text</p>
+          <div id="description">
+            <h1 id="title">Phosphoric Plasma</h1>
+            <p id="paragraph">
+              Grenade with phosphorous-plasma charge: powerful explosion inflicts instant damage and long-lasting burning and poisoning effect, harming enemies over time.
+            </p>
+            <div id="bottomInfo" class="outerBlock">
+              <span class="innerBlock">Highest Tier</span>
+              <span class="innerBlock">Medium Area</span>
+            </div>
+          </div>
           <div id="images">
-            <div class="innerBlock image_small"><img src="png/bf25.png" /></div>
-            <div class="innerBlock image_small"><img src="png/bf25.png" /></div>
             <div class="innerBlock image_small"><img src="png/bf25.png" /></div>
             <div class="innerBlock image_small"><img src="png/bf25.png" /></div>
           </div>
         </div>
+        <object data="https://img.shields.io/badge/Type-Area-white" height="20"></object>
       </div>
       <object data="svg/blank_plate.svg?main=Qa8fX1c&sub1=gzuJ8l2&sub2=JXXvgup&t=Plasma phosphoric&p=Seems like with plasma grenade from above and have advanced area damage and long lasting effects." type="image/svg+xml" width="532" height="148"></object>
     </div>
