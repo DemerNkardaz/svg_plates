@@ -36,7 +36,8 @@
         bottom: 10px;
         right: 10px;
       }
-      .image_small img {width: 48px; height: 48px;}
+      .image_small {width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;}
+      .image_small img {width: 38px; height: 38px;}
       #description {
         position: relative;
         max-width: 270px;
@@ -69,7 +70,7 @@
     </style>
     <body xmlns="http://www.w3.org/1999/xhtml">
       <div id="frame" class="outerBlock">
-        <div id="image_main" class="innerBlock"><img src="https://i.imgur.com/Qa8fX1c.png" /></div>
+        <div id="image_main" class="innerBlock"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/bf25.png" /></div>
         <div id="info_block">
           <div id="description">
             <h1 id="title">Phosphoric Plasma</h1>
@@ -82,8 +83,8 @@
             </div>
           </div>
           <div id="images">
-            <div class="innerBlock image_small"><img src="https://i.imgur.com/gzuJ8l2.png"/></div>
-            <div class="innerBlock image_small"><img src="https://i.imgur.com/JXXvgup.png"/></div>
+            <div class="innerBlock image_small"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/grenade_phosphorus_01_45 (128 x 128).png"/></div>
+            <div class="innerBlock image_small"><img src="https://raw.githubusercontent.com/DemerNkardaz/svg_plates/main/png/grenade_phosphorus_02 (128 x 128).png"/></div>
           </div>
         </div>
         <object data="https://img.shields.io/badge/Type-Area-white" height="20"></object>
