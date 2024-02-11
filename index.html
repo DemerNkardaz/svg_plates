@@ -8,6 +8,7 @@
   <body>
     <style>
       body {
+        position: relative;
         background-color: #201810;
         background: #201810;
           background-position-x: 0%;
@@ -26,15 +27,22 @@
       }
       #grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
-        width: 1040px;
+
+      }
+      #main_block {
+        display: flex;
+        flex-direction: column;
         align-self: center;
         justify-self: center;
-        margin-top: 256px;
+        margin-top: 32px;
+        margin-bottom: 128px;
       }
+      h2 {margin: 32px 0 32px 0}
+      .remark {position: absolute; bottom: 10px; left: 10px; font-size: 10pt;}
     </style>
     <style>
       * {color: #eee; font-family: sans-serif;}
@@ -74,32 +82,60 @@
       #bottomInfo span:last-of-type {margin-left: 5px;}
       #badges{position: absolute; top: 10px; right: 10px; display: grid; grid-template-columns: 1fr; grid-row-gap: 2.5px; justify-items: end;}
     </style>
-    <div id="grid">
-      <div id="frame" class="outerBlock">
-        <div id="image_main" class="innerBlock"><img src="png/bf25.png" crossorigin="anonymous" /></div>
-        <div id="info_block">
-          <div id="description">
-            <h1 id="title">Phosphoric Plasma</h1>
-            <p id="paragraph">
-              Grenade with phosphorous-plasma charge: powerful explosion inflicts instant damage and long-lasting burning and poisoning effect, harming enemies over time.
-            </p>
-            <div id="bottomInfo" class="outerBlock">
-              <span class="innerBlock">Highest Tier</span>
-              <span class="innerBlock">Medium Area</span>
+    <div id="main_block">
+      <h2>Prometheus Grenade Launcher ammunition types</h2>
+      <div id="grid"><!--
+        <div id="frame" class="outerBlock">
+          <div id="image_main" class="innerBlock"><img src="png/bf25.png" crossorigin="anonymous" /></div>
+          <div id="info_block">
+            <div id="description">
+              <h1 id="title">Phosphoric Plasma</h1>
+              <p id="paragraph">
+                Grenade with phosphorous-plasma charge: powerful explosion inflicts instant damage and long-lasting burning and poisoning effect, harming enemies over time.
+              </p>
+              <div id="bottomInfo" class="outerBlock">
+                <span class="innerBlock">Highest Tier</span>
+                <span class="innerBlock">Medium Area</span>
+              </div>
+            </div>
+          </div>
+          <div id="additional">
+            <div id="images">
+              <div class="innerBlock image_small"><img src="png/grenade_phosphorus_01_45 (128 x 128).png" crossorigin="anonymous" /></div>
+              <div class="innerBlock image_small"><img src="png/grenade_phosphorus_02 (128 x 128).png" crossorigin="anonymous" /></div>
+            </div>
+            <div id="badges">
+              <object data="https://img.shields.io/badge/Type-Area-white" height="20" crossorigin="anonymous"></object>
             </div>
           </div>
         </div>
-        <div id="additional">
-          <div id="images">
-            <div class="innerBlock image_small"><img src="png/grenade_phosphorus_01_45 (128 x 128).png" crossorigin="anonymous" /></div>
-            <div class="innerBlock image_small"><img src="png/grenade_phosphorus_02 (128 x 128).png" crossorigin="anonymous" /></div>
-          </div>
-          <div id="badges">
-            <object data="https://img.shields.io/badge/Type-Area-white" height="20" crossorigin="anonymous"></object>
-          </div>
-        </div>
+        <object data="svg/blank_plate.svg?main=Qa8fX1c&sub1=gzuJ8l2&sub2=JXXvgup&t=Plasma phosphoric&p=Seems like with plasma grenade from above and have advanced area   damage and long lasting effects." type="image/svg+xml" width="532" height="148"></object>-->
+        <object data="svg/static_frag.svg" type="image/svg+xml"></object>
+        <object data="svg/static_sentry.svg" type="image/svg+xml"></object>
+        <object data="svg/static_buckshot.svg" type="image/svg+xml"></object>
+        <object data="svg/static_iron_fist.svg" type="image/svg+xml"></object>
+        <object data="svg/static_buckshot_piercing.svg" type="image/svg+xml"></object>
+        <object data="svg/static_frag_lighted.svg" type="image/svg+xml"></object>
+        <object data="svg/static_flare.svg" type="image/svg+xml"></object>
+        <object data="svg/static_cluster.svg" type="image/svg+xml"></object>
+        <object data="svg/static_he.svg" type="image/svg+xml"></object>
+        <object data="svg/static_ic.svg" type="image/svg+xml"></object>
+        <object data="svg/static_shock.svg" type="image/svg+xml"></object>
+        <object data="svg/static_gas.svg" type="image/svg+xml"></object>
+        <object data="svg/static_slowing.svg" type="image/svg+xml"></object>
+        <object data="svg/static_acid.svg" type="image/svg+xml"></object>
+        <object data="svg/static_venom.svg" type="image/svg+xml"></object>
+        <object data="svg/static_discharge.svg" type="image/svg+xml"></object>
+        <object data="svg/static_thermobaric.svg" type="image/svg+xml"></object>
+        <object data="svg/static_stasis.svg" type="image/svg+xml"></object>
+        <object data="svg/static_plasma.svg" type="image/svg+xml"></object>
+        <object data="svg/static_phosphorus.svg" type="image/svg+xml"></object>
+        <object data="svg/static_uran_fist.svg" type="image/svg+xml"></object>
+        <object data="svg/static_uran_needle.svg" type="image/svg+xml"></object>
+        <object data="svg/static_promethium_needle.svg" type="image/svg+xml"></object>
+        <object data="svg/static_pluto.svg" type="image/svg+xml"></object>
       </div>
-      <object data="svg/blank_plate.svg?main=Qa8fX1c&sub1=gzuJ8l2&sub2=JXXvgup&t=Plasma phosphoric&p=Seems like with plasma grenade from above and have advanced area damage and long lasting effects." type="image/svg+xml" width="532" height="148"></object>
     </div>
+    <div class="remark">This is not official Factorio resource.<br>Wube Software Ltd., devs of Factorio game, the authors of used border images and background image.</div>
   </body>
 </html>
